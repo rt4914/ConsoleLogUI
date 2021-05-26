@@ -72,7 +72,9 @@ class ConsoleLogger(context: Context) {
     }
 
     private fun writeInternal(logLevel: LogLevel, tag: String, fullLog: String) {
-        logToFileInBackground("${Calendar.getInstance().time}\t${logLevel.name}/$tag: $fullLog")
+        if (BuildConfig.DEBUG) {
+            logToFileInBackground("${Calendar.getInstance().time}\t${logLevel.name}/$tag: $fullLog")
+        }
         Log.println(logLevel.logLevel, tag, fullLog)
     }
 

@@ -8,7 +8,9 @@ class ConsoleUIApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        clearAllStoredLogs()
+        if (BuildConfig.DEBUG) {
+            clearAllStoredLogs()
+        }
     }
 
     /** Clear all previously saved logs at the start of application. */

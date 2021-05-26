@@ -25,6 +25,11 @@ open class BaseActivity : AppCompatActivity() {
 
         val screenView: View = inflater.inflate(resId, null)
         val showLogsFab = view.findViewById<ExtendedFloatingActionButton>(R.id.show_all_logs_fab)
+
+        if (!BuildConfig.DEBUG) {
+            showLogsFab.visibility = View.GONE
+        }
+
         showLogsFab.setOnClickListener {
             consoleLogger.d(TAG, "Show logs button clicked")
             ShowLogDialogFragment
