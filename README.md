@@ -24,4 +24,10 @@ As per this task definition the best end result should have following properties
 ## Resources
 
 [Debug APK Link](shorturl.at/wBFJ6)
+
 [Release APK Link](shorturl.at/gnBSZ)
+
+
+https://user-images.githubusercontent.com/9396084/119658088-5d78fe80-be4a-11eb-88c6-319ee6003ae9.mp4
+
+
